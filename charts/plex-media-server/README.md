@@ -147,6 +147,7 @@ Before contributing, please read the [Code of Conduct](../../CODE_OF_CONDUCT.md)
 | rclone.remotes | list | `[]` | The remote drive that should be mounted using rclone this must be in the form of `name:[/optional/path]` this remote will be mounted at `/data/name` in the PMS container |
 | runtimeClassName | string | `""` | Specify your own runtime class name eg use gpu |
 | service.annotations | object | `{}` | Optional extra annotations to add to the service resource |
+| service.labels | object | `{}` | Optional extra labels to add to the service resource |
 | service.port | int | `32400` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |
