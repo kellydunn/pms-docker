@@ -4,6 +4,9 @@ metadata:
   name: {{ include "pms-chart.fullname" . }}
   labels:
     {{- include "pms-chart.labels" . | nindent 4 }}
+    {{- if .Values.service.labels }}
+      {{ .Values.service.labels | toYaml | nindent 4}}
+    {{- end}}
   {{- with .Values.service.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
