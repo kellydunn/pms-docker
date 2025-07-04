@@ -39,6 +39,8 @@ service:
   port: 32400
   annotations:
     plex.tv/description: just an annotation
+  labels:
+    plex.tv/label: just a label
 
 priorityClassName: system-node-critical
 
